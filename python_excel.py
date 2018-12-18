@@ -10,7 +10,7 @@ import pymysql
 class Excel_data_import_database(object):
     def __init__(self):
         self.excel_name = "test.xlsx"  # excel文件名
-        self.sheet_name = "test"  # excelsheet名
+        self.sheet_name = "test"  # excel工作表名
         self.database_ip = "localhost"  # 数据库ip
         self.user = "root"  # 数据库用户
         self.password = "642936557"  # 数据库密码
@@ -21,7 +21,7 @@ class Excel_data_import_database(object):
         except:
             print("打开Excel文件失败!")
         try:
-            sheet = book.sheet_by_name(self.sheet_name)  # 读取sheet
+            sheet = book.sheet_by_name(self.sheet_name)  # 读取工作表
             return sheet
         except:
             print("读取Excelsheet失败!")
