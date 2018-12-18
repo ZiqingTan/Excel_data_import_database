@@ -4,7 +4,7 @@ import pymysql
 '''
 把Excel文件和本python文件放在同一目录下
 
-需要安装的第三方库[pymysql]
+需要安装的第三方库[pymysql,xlrd]
 
 '''
 class Excel_data_import_database(object):
